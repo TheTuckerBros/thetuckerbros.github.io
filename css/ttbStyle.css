@@ -35,27 +35,47 @@ header .logo {
 
 main {
     position: relative;
-    top: 0px;
-    left: 0px;
-    right: 0px; 
+    max-width: 1000px;
+    margin: auto;
 }
-
+main .tagLine {
+    text-align: center;
+    font-weight: 300;
+}
 .boxes {
-    width: 915px;
+    position: relative;
+    max-width: 960px;
+    min-height: 500px;
     margin: auto;
     margin-top: 25px;
     margin-bottom: 25px;
     display: block;
 }
 .box {
-    width: 230px;
-    height: 280px;
-    background: #efefef;
-    display: inline-block;
-    padding: 10px;
-    margin-left: 25px;
-    margin-right: 25px;
-    border: 1px solid #ccc;
+    width: 300px;
+    height: 500px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+.box img {
+    display: block;
+    width: 290;
+    height: 290px;
+    margin: auto;
+    margin-bottom: 10px;
+    border: solid 1px #ccc;
+    padding: 5px;
+}
+
+.box div {
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.box span {
+    font-weight: 300;
 }
 
 footer {
@@ -64,11 +84,18 @@ footer {
     bottom: 0px;
     left: 0px;
     right: 0px;
-    height: 20px;
+    height: 150px;
     border-top-width: 1px;
     border-top-color: #ccc;
     border-top-style: solid;
-    padding: 0px 15px;
+    padding: 0px;
     font-size: 10px;
-    color: #666;
+    color: #ccc;
+    background-color: #221A14;
+}
+
+footer div {
+    background-color: #ccc;
+    height: 50px;
+    margin-bottom: 10px;
 }
