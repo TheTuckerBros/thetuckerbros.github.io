@@ -1,3 +1,6 @@
+body {
+    background-color: #221A14;
+}
 header {
     height: 55px;
     position: relative;
@@ -32,16 +35,33 @@ header .logo {
     background-repeat: no-repeat;
     background-position: center;
 }
-
 main {
+    top: 0px;
+    width: 100%;
+    background: #fff;
+    margin-top: 0px; 
+    display: inline-block;
+}
+main .content {
     position: relative;
     max-width: 1000px;
     margin: auto;
+    background: #fff;
 }
 main .tagLine {
     text-align: center;
     font-weight: 300;
 }
+
+.image {
+    width: 100%;
+    height: 665px;
+    background-image: url("../img/code-m.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
 .boxes {
     position: relative;
     max-width: 960px;
@@ -50,6 +70,12 @@ main .tagLine {
     margin-top: 25px;
     margin-bottom: 25px;
     display: block;
+}
+.boxes:after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
 }
 .box {
     width: 300px;
@@ -91,11 +117,14 @@ footer {
     padding: 0px;
     font-size: 10px;
     color: #ccc;
-    background-color: #221A14;
 }
 
-footer div {
+footer .social {
     background-color: #ccc;
     height: 50px;
     margin-bottom: 10px;
+}
+
+footer .copy {
+    padding: 5px 15px;
 }
