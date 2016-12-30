@@ -143,6 +143,14 @@ footer {
     color: #ccc;
 }
 
+footer a {
+    color: #fff;
+}
+
+footer a::visited {
+    color: #fff;
+}
+
 .social a {
     margin-right: 10px;
 }
