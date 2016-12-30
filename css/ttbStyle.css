@@ -143,13 +143,36 @@ footer {
     color: #ccc;
 }
 
+.social a {
+    margin-right: 10px;
+}
+
+.social a img {
+    width: 32px;
+    height: 32px;
+}
+
 footer .social {
     background-color: #ccc;
-    height: 50px;
+    height: 40px;
     margin-bottom: 10px;
+    padding-top: 8px;
 }
 
 footer .copy {
     width: 100%;
     text-align: center;
+}
+
+/* The Magic Float Center Code */
+.float_center {
+  float: right;
+
+  position: relative;
+  left: -50%; /* or right 50% */
+  text-align: left;
+}
+.float_center > .child {
+  position: relative;
+  left: 50%;
 }
